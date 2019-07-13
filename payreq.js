@@ -13,12 +13,14 @@ const BITCOINJS_NETWORK_INFO = {
   bitcoin: coininfo.bitcoin.main.toBitcoinJS(),
   testnet: coininfo.bitcoin.test.toBitcoinJS(),
   regtest: coininfo.bitcoin.regtest.toBitcoinJS(),
+  simnet: coininfo.bitcoin.simnet.toBitcoinJS(),
   litecoin: coininfo.litecoin.main.toBitcoinJS(),
   litecoin_testnet: coininfo.litecoin.test.toBitcoinJS()
 }
 BITCOINJS_NETWORK_INFO.bitcoin.bech32 = 'bc'
 BITCOINJS_NETWORK_INFO.testnet.bech32 = 'tb'
 BITCOINJS_NETWORK_INFO.regtest.bech32 = 'bcrt'
+BITCOINJS_NETWORK_INFO.simnet.bech32 = 'sb'
 BITCOINJS_NETWORK_INFO.litecoin.bech32 = 'ltc'
 BITCOINJS_NETWORK_INFO.litecoin_testnet.bech32 = 'tltc'
 
@@ -35,6 +37,7 @@ const BECH32CODES = {
   bc: 'bitcoin',
   tb: 'testnet',
   bcrt: 'regtest',
+  sb: 'simnet',
   ltc: 'litecoin',
   tltc: 'litecoin_testnet'
 }
